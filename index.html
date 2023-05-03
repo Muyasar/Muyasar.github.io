@@ -16,17 +16,18 @@
       height: 100vh;
       margin: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding-top: 30px;
+      align-items: center;
     }
     h1 {
       font-size: 48px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
     }
-    @media (max-width: 767px) {
-      body {
-        background-size: 100% auto;
-      }
+    @media (max-width: 768px) {
       h1 {
         font-size: 32px;
       }
@@ -34,6 +35,6 @@
   </style>
 </head>
 <body>
-  <h1>Getting Ready to Fly</h1>
+  <h1>Getting Ready to Fly!</h1>
 </body>
 </html>
